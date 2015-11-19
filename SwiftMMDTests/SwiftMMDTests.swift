@@ -25,7 +25,13 @@ class SwiftMMDTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-    
+    func testRender() {
+        let s = "Title: Test Document\n" +
+        "#This is headline 1\n" +
+        "##This is headline 2\n"
+        let output = s.mmdToHTML()
+        print("\(output)")
+    }
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock {
