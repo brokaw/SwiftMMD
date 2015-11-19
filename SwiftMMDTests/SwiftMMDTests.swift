@@ -29,7 +29,7 @@ class SwiftMMDTests: XCTestCase {
         let s = "Title: Test Document\n" +
         "#This is headline 1\n" +
         "##This is headline 2\n"
-        let output = s.mmdToHTML()
+        let output = s.mmdToHTMLDocument()
         print("\(output)")
     }
     func testPerformanceExample() {

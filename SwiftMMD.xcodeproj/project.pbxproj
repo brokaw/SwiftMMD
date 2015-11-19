@@ -11,7 +11,7 @@
 		AA91C82F1BFD5A990062152C /* SwiftMMD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA91C8241BFD5A990062152C /* SwiftMMD.framework */; };
 		AA91C8341BFD5A990062152C /* SwiftMMDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA91C8331BFD5A990062152C /* SwiftMMDTests.swift */; };
 		AA91C8431BFD5B3E0062152C /* MultiMarkdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA91C8421BFD5B3E0062152C /* MultiMarkdown.swift */; };
-		AA91C8471BFD84FB0062152C /* libMultiMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = AA91C8451BFD84FB0062152C /* libMultiMarkdown.h */; };
+		AA91C8471BFD84FB0062152C /* libMultiMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = AA91C8451BFD84FB0062152C /* libMultiMarkdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA91C8481BFD84FB0062152C /* libMultiMarkdown.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA91C8461BFD84FB0062152C /* libMultiMarkdown.a */; };
 /* End PBXBuildFile section */
 
