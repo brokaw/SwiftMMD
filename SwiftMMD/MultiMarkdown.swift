@@ -26,7 +26,7 @@ public func mmd_string_to_markdown(string: String) -> String {
 public extension String {
 
     public func mmdToHTMLDocument() -> String {
-        let output = markdown_to_string(self, 1, Int32(HTML_FORMAT.rawValue))
+        let output = markdown_to_string(self, UInt(EXT_COMPLETE.rawValue), Int32(HTML_FORMAT.rawValue))
         return String.cStringToString(output)
     }
     public func mmdRenderToFormat(format: export_formats, extensions: parser_extensions) -> String {
