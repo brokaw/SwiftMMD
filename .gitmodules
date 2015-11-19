@@ -1,0 +1,3 @@
+[submodule "submodules/MultiMarkdown-5"]
+	path = submodules/MultiMarkdown-5
+	url = https://github.com/fletcher/MultiMarkdown-5.git

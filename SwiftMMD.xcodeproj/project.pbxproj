@@ -10,9 +10,9 @@
 		AA91C8281BFD5A990062152C /* SwiftMMD.h in Headers */ = {isa = PBXBuildFile; fileRef = AA91C8271BFD5A990062152C /* SwiftMMD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA91C82F1BFD5A990062152C /* SwiftMMD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA91C8241BFD5A990062152C /* SwiftMMD.framework */; };
 		AA91C8341BFD5A990062152C /* SwiftMMDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA91C8331BFD5A990062152C /* SwiftMMDTests.swift */; };
-		AA91C83F1BFD5AD70062152C /* libMultiMarkdown.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA91C83E1BFD5AD70062152C /* libMultiMarkdown.a */; };
-		AA91C8411BFD5AFE0062152C /* libMultiMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = AA91C8401BFD5AFE0062152C /* libMultiMarkdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA91C8431BFD5B3E0062152C /* MultiMarkdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA91C8421BFD5B3E0062152C /* MultiMarkdown.swift */; };
+		AA91C8471BFD84FB0062152C /* libMultiMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = AA91C8451BFD84FB0062152C /* libMultiMarkdown.h */; };
+		AA91C8481BFD84FB0062152C /* libMultiMarkdown.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA91C8461BFD84FB0062152C /* libMultiMarkdown.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +32,9 @@
 		AA91C82E1BFD5A990062152C /* SwiftMMDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftMMDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA91C8331BFD5A990062152C /* SwiftMMDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMMDTests.swift; sourceTree = "<group>"; };
 		AA91C8351BFD5A990062152C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA91C83E1BFD5AD70062152C /* libMultiMarkdown.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMultiMarkdown.a; path = "MultiMarkdown-5/build/libMultiMarkdown.a"; sourceTree = SOURCE_ROOT; };
-		AA91C8401BFD5AFE0062152C /* libMultiMarkdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libMultiMarkdown.h; path = "MultiMarkdown-5/src/libMultiMarkdown.h"; sourceTree = SOURCE_ROOT; };
 		AA91C8421BFD5B3E0062152C /* MultiMarkdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiMarkdown.swift; sourceTree = "<group>"; };
+		AA91C8451BFD84FB0062152C /* libMultiMarkdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libMultiMarkdown.h; path = "submodules/MultiMarkdown-5/src/libMultiMarkdown.h"; sourceTree = "<group>"; };
+		AA91C8461BFD84FB0062152C /* libMultiMarkdown.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMultiMarkdown.a; path = "submodules/MultiMarkdown-5/build/libMultiMarkdown.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA91C83F1BFD5AD70062152C /* libMultiMarkdown.a in Frameworks */,
+				AA91C8481BFD84FB0062152C /* libMultiMarkdown.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				AA91C8261BFD5A990062152C /* SwiftMMD */,
+				AA91C8491BFD85050062152C /* Multimarkdown */,
 				AA91C8321BFD5A990062152C /* SwiftMMDTests */,
 				AA91C8251BFD5A990062152C /* Products */,
 			);
@@ -80,8 +81,6 @@
 			children = (
 				AA91C8271BFD5A990062152C /* SwiftMMD.h */,
 				AA91C8421BFD5B3E0062152C /* MultiMarkdown.swift */,
-				AA91C83E1BFD5AD70062152C /* libMultiMarkdown.a */,
-				AA91C8401BFD5AFE0062152C /* libMultiMarkdown.h */,
 				AA91C8291BFD5A990062152C /* Info.plist */,
 			);
 			path = SwiftMMD;
@@ -96,6 +95,15 @@
 			path = SwiftMMDTests;
 			sourceTree = "<group>";
 		};
+		AA91C8491BFD85050062152C /* Multimarkdown */ = {
+			isa = PBXGroup;
+			children = (
+				AA91C8451BFD84FB0062152C /* libMultiMarkdown.h */,
+				AA91C8461BFD84FB0062152C /* libMultiMarkdown.a */,
+			);
+			name = Multimarkdown;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -104,7 +112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA91C8281BFD5A990062152C /* SwiftMMD.h in Headers */,
-				AA91C8411BFD5AFE0062152C /* libMultiMarkdown.h in Headers */,
+				AA91C8471BFD84FB0062152C /* libMultiMarkdown.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +338,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MultiMarkdown-5/build",
+					"$(PROJECT_DIR)/submodules/MultiMarkdown-5/build",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.gwhizsoftware.SwiftMMD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,6 +363,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MultiMarkdown-5/build",
+					"$(PROJECT_DIR)/submodules/MultiMarkdown-5/build",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.gwhizsoftware.SwiftMMD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
