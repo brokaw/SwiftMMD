@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D2DD158E7BE99FE87CE4AE87FBC9049E1E3A25DC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D2DD158E7BE99FE87CE4AE87FBC9049E1E3A25DC" : 0,
+    "3EE91AFE3533650804206ED688D9B08BB74C1FB0" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9068D361-43AD-4494-95B7-F2DE92A6C1D1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D2DD158E7BE99FE87CE4AE87FBC9049E1E3A25DC" : "SwiftMMD\/",
+    "3EE91AFE3533650804206ED688D9B08BB74C1FB0" : "SwiftMMD\/submodules\/MultiMarkdown-5\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SwiftMMD",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SwiftMMD.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:fletcher\/MultiMarkdown-5.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3EE91AFE3533650804206ED688D9B08BB74C1FB0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:brokaw\/SwiftMMD.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D2DD158E7BE99FE87CE4AE87FBC9049E1E3A25DC"
+    }
+  ]
+}
